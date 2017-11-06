@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Gallary</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <script src="../scripts/angular.min.js"></script>
+    <script src="../scripts/angular-ui-router.min.js"></script>
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="myApp">
+    <form>
+
+    <div class="container-fluid" ng-controller="phoneGallaryCtrl as vm">
+        <div class="row">
+            <div class="col-md-2 sidmenuPadding">
+
+                <div class="list-group border-0 card text-center text-md-left">
+                    <a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-filter"></i> <span class="d-none d-md-inline">Filter by</span> </a>
+                    <div class="collapse" id="menu1">
+                        <div   class="list-group-item form-group" >Type<br />
+
+                            <label><input type="radio" ng-model="vm.type" value="1"  ng-change="vm.searchBytype(vm.type)" name="optradio">Tablet</label>
+                        
+
+                            <label class="typeSearch"><input type="radio"ng-model="vm.type" value="2"  ng-change="vm.searchBytype(vm.type)" name="optradio">Phone</label>
+                        </div>
+
+                        <div  class="list-group-item form-group" data-parent="#menu1">Price<br />
+                            <label>    Min <input type="number" ng-model="vm.minPrice" class="form-control priceInpots" /></label>
+                            <label> Max  <input type="number" ng-model="vm.maxPrice" class="form-control priceInpots"/></label>
+                            <button type="button" class="btn  btn-primary searchBtn"  ng-click="vm.searchByPrice(vm.minPrice,vm.maxPrice)">Serach</button>
+                        </div>
+                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                    </div>
+
+                    <!--<a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-dashboard"></i> <span class="d-none d-md-inline">Item 2</span> </a>
+                    <div class="collapse" id="menu2">
+                        
+                        <a href="#" class="list-group-item" data-parent="#menu2">Subitem 1</a>
+                        <a href="#" class="list-group-item" data-parent="#menu2"></a>
+                        <a href="#" class="list-group-item" data-parent="#menu2">Subitem 3</a>
+                    </div>-->
+                  
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header">
+                            <h1>
+                                Phone <small>Gallary</small>
+                            </h1>
+                            <label>Prices on: </label>
+                            <select class="selectDdl form-control" ng-model="vm.prices"  ng-change="vm.convertPrices(vm.prices)">
+                                <option value="2">USD</option>
+                                <option value="1">EGP</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" ng-repeat="phone in vm.phonseData">
+                        <div class="thumbnail thumbnailHeight">
+                            <img style="height: 175px;" src="{{phone.imageUrl}}">
+                            <div class="caption">
+                                <h3>
+                                    {{phone.name}}
+                                </h3>
+                                <p>
+                                    {{phone.snippet}}
+                                </p>
+                                <p ng-show="vm.showUSD">
+                                    Price : {{phone.priceUSD | currency:"USD $"}}
+                                </p>
+                                <p ng-show="vm.showEGP">
+                                    Price : {{phone.priceEGP | currency:"EGP "}}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <ul class="pagination">
+                    <li>
+                        <a href="#">Prev</a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </form>
+
+</body>
+</html>
