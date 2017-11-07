@@ -31,3 +31,4 @@ D:\projcts\phones\phones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.
 D:\projcts\phones\phones\obj\Debug\phones.csprojResolveAssemblyReference.cache
 D:\projcts\phones\phones\obj\Debug\phones.dll
 D:\projcts\phones\phones\obj\Debug\phones.pdb
+D:\projcts\phones\phones\obj\Debug\phones.csproj.CoreCompileInputs.cache

@@ -1,4 +1,6 @@
 ﻿(function () {
+
+    //parent controller holdes the languageService
     'use strict';
 
     angular

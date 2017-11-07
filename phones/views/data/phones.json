@@ -138,7 +138,7 @@
     "snippet": "The first smartphone with a 1.2 GHz processor and global capabilities.",
     "priceUSD": 30.54,
     "type": "Phone",
-    "color": "Gray"
+    "color": "Black"
   },
   {
     "age": 11,
@@ -171,7 +171,7 @@
     "snippet": "Are you ready for everything life throws your way?",
     "priceUSD": 30.54,
     "type": "Tablet",
-    "color": "Gray"
+    "color": "Black"
   },
   {
     "age": 14,
@@ -204,7 +204,7 @@
     "snippet": "The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value.",
     "priceUSD": 26.54,
     "type": "Phone",
-    "color": "Gray"
+    "color": "Gold"
   },
   {
     "age": 17,
@@ -224,7 +224,7 @@
     "snippet": "The T-Mobile G2 with Google is the first smartphone built for 4G speeds on T-Mobile's new network. Get the information you need, faster than you ever thought possible.",
     "priceUSD": 15.70,
     "type": "Phone",
-    "color": "Gray"
+    "color": "Gold"
   },
   {
     "age": 19,
@@ -235,6 +235,80 @@
     "priceUSD": 18.54,
     "type": "Phone",
     "color": "Gray"
+  },
+  {
+    "age": 13,
+    "carrier": "T-Mobile",
+    "id": "motorola-defy-with-motoblur",
+    "imageUrl": "https://motorola-global-en-uk.custhelp.com/euf/assets/images/ProdImages/motocare/7695-hero.png",
+    "name": "Motorola DEFY™ with MOTOBLUR™",
+    "snippet": "Are you ready for everything life throws your way?",
+    "priceUSD": 30.54,
+    "type": "Tablet",
+    "color": "Gold"
+  },
+  {
+    "age": 14,
+    "carrier": "T-Mobile",
+    "id": "t-mobile-mytouch-4g",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/416anJOhW9L.jpg",
+    "name": "T-Mobile myTouch 4G",
+    "snippet": "The T-Mobile myTouch 4G is a premium smartphone designed to deliver blazing fast 4G speeds so that you can video chat from practically anywhere, with or without Wi-Fi.",
+    "priceUSD": 30.54,
+    "type": "Phone",
+    "color": "Black"
+  },
+  {
+    "age": 15,
+    "carrier": "US Cellular",
+    "id": "samsung-mesmerize-a-galaxy-s-phone",
+    "imageUrl": "http://www.comparecellular.com/images/assets/11-15-2010-telus-sgsfascinate.jpg",
+    "name": "Samsung Mesmerize™ a Galaxy S™ phone",
+    "snippet": "The Samsung Mesmerize™ delivers a cinema quality experience like you’ve never seen before. Its innovative 4” touch display technology provides rich picture brilliance,even outdoors",
+    "priceUSD": 30.54,
+    "type": "Phone",
+    "color": "Gray"
+  },
+  {
+    "age": 16,
+    "carrier": "Sprint",
+    "id": "sanyo-zio",
+    "imageUrl": "http://pocketnow.com/wp-content/uploads/2010/08/cricketzio.jpg",
+    "name": "SANYO ZIO",
+    "snippet": "The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value.",
+    "priceUSD": 26.54,
+    "type": "Phone",
+    "color": "Gray"
+  },
+  {
+    "age": 17,
+    "id": "samsung-transform",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjIpBtlAhHjc5b4szzeherBmVwLzSUyr-a_h6cNZb4sN1GqVHh6w",
+    "name": "Samsung Transform™",
+    "snippet": "The Samsung Transform™ brings you a fun way to customize your Android powered touch screen phone to just the way you like it through your favorite themed “Sprint ID Service Pack”.",
+    "priceUSD": 22.80,
+    "type": "Phone",
+    "color": "Gold"
+  },
+  {
+    "age": 18,
+    "id": "t-mobile-g2",
+    "imageUrl": "http://phandroid.s3.amazonaws.com/wp-content/uploads/2010/10/T-Mobile-G2-views.jpg",
+    "name": "T-Mobile G2",
+    "snippet": "The T-Mobile G2 with Google is the first smartphone built for 4G speeds on T-Mobile's new network. Get the information you need, faster than you ever thought possible.",
+    "priceUSD": 15.70,
+    "type": "Phone",
+    "color": "Gray"
+  },
+  {
+    "age": 19,
+    "id": "motorola-charm-with-motoblur",
+    "imageUrl": "https://hothardware.com/newsimages/Item13699/Charm.jpg",
+    "name": "Motorola CHARM™ with MOTOBLUR™",
+    "snippet": "Motorola CHARM fits easily in your pocket or palm.  Includes MOTOBLUR service.",
+    "priceUSD": 18.54,
+    "type": "Phone",
+    "color": "Black"
   },
   {
     "age": 13,
@@ -267,7 +341,7 @@
     "snippet": "The Samsung Mesmerize™ delivers a cinema quality experience like you’ve never seen before. Its innovative 4” touch display technology provides rich picture brilliance,even outdoors",
     "priceUSD": 30.54,
     "type": "Phone",
-    "color": "Gray"
+    "color": "Black"
   },
   {
     "age": 16,
@@ -278,7 +352,7 @@
     "snippet": "The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value.",
     "priceUSD": 26.54,
     "type": "Phone",
-    "color": "Gray"
+    "color": "Gold"
   },
   {
     "age": 17,
@@ -288,7 +362,7 @@
     "snippet": "The Samsung Transform™ brings you a fun way to customize your Android powered touch screen phone to just the way you like it through your favorite themed “Sprint ID Service Pack”.",
     "priceUSD": 22.80,
     "type": "Phone",
-    "color": "Gray"
+    "color": "Black"
   },
   {
     "age": 18,
@@ -298,81 +372,7 @@
     "snippet": "The T-Mobile G2 with Google is the first smartphone built for 4G speeds on T-Mobile's new network. Get the information you need, faster than you ever thought possible.",
     "priceUSD": 15.70,
     "type": "Phone",
-    "color": "Gray"
-  },
-  {
-    "age": 19,
-    "id": "motorola-charm-with-motoblur",
-    "imageUrl": "https://hothardware.com/newsimages/Item13699/Charm.jpg",
-    "name": "Motorola CHARM™ with MOTOBLUR™",
-    "snippet": "Motorola CHARM fits easily in your pocket or palm.  Includes MOTOBLUR service.",
-    "priceUSD": 18.54,
-    "type": "Phone",
-    "color": "Gray"
-  },
-  {
-    "age": 13,
-    "carrier": "T-Mobile",
-    "id": "motorola-defy-with-motoblur",
-    "imageUrl": "https://motorola-global-en-uk.custhelp.com/euf/assets/images/ProdImages/motocare/7695-hero.png",
-    "name": "Motorola DEFY™ with MOTOBLUR™",
-    "snippet": "Are you ready for everything life throws your way?",
-    "priceUSD": 30.54,
-    "type": "Tablet",
-    "color": "Gray"
-  },
-  {
-    "age": 14,
-    "carrier": "T-Mobile",
-    "id": "t-mobile-mytouch-4g",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/416anJOhW9L.jpg",
-    "name": "T-Mobile myTouch 4G",
-    "snippet": "The T-Mobile myTouch 4G is a premium smartphone designed to deliver blazing fast 4G speeds so that you can video chat from practically anywhere, with or without Wi-Fi.",
-    "priceUSD": 30.54,
-    "type": "Phone",
-    "color": "Gray"
-  },
-  {
-    "age": 15,
-    "carrier": "US Cellular",
-    "id": "samsung-mesmerize-a-galaxy-s-phone",
-    "imageUrl": "http://www.comparecellular.com/images/assets/11-15-2010-telus-sgsfascinate.jpg",
-    "name": "Samsung Mesmerize™ a Galaxy S™ phone",
-    "snippet": "The Samsung Mesmerize™ delivers a cinema quality experience like you’ve never seen before. Its innovative 4” touch display technology provides rich picture brilliance,even outdoors",
-    "priceUSD": 30.54,
-    "type": "Phone",
-    "color": "Gray"
-  },
-  {
-    "age": 16,
-    "carrier": "Sprint",
-    "id": "sanyo-zio",
-    "imageUrl": "http://pocketnow.com/wp-content/uploads/2010/08/cricketzio.jpg",
-    "name": "SANYO ZIO",
-    "snippet": "The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value.",
-    "priceUSD": 26.54,
-    "type": "Phone",
-    "color": "Gray"
-  },
-  {
-    "age": 17,
-    "id": "samsung-transform",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjIpBtlAhHjc5b4szzeherBmVwLzSUyr-a_h6cNZb4sN1GqVHh6w",
-    "name": "Samsung Transform™",
-    "snippet": "The Samsung Transform™ brings you a fun way to customize your Android powered touch screen phone to just the way you like it through your favorite themed “Sprint ID Service Pack”.",
-    "priceUSD": 22.80,
-    "type": "Phone",
-    "color": "Gray"
-  },
-  {
-    "age": 18,
-    "id": "t-mobile-g2",
-    "imageUrl": "http://phandroid.s3.amazonaws.com/wp-content/uploads/2010/10/T-Mobile-G2-views.jpg",
-    "name": "T-Mobile G2",
-    "snippet": "The T-Mobile G2 with Google is the first smartphone built for 4G speeds on T-Mobile's new network. Get the information you need, faster than you ever thought possible.",
-    "priceUSD": 15.70,
-    "type": "Phone",
-    "color": "Gray"
+    "color": "Black"
   },
   {
     "age": 19,
