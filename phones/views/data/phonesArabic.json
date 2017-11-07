@@ -1,0 +1,117 @@
+﻿[
+  {
+    "age": 0,
+    "id": "motorola-xoom-with-wi-fi",
+    "imageUrl": "https://motorola-global-en-uk.custhelp.com/euf/assets/images/ProdImages/motocare/8013-hero.png",
+    "name": "Motorola XOOM™ with Wi-Fi",
+    "snippet": "التالي، الجيل القادم  تجربة المستقبل مع Motorola XOOM مع واي فاي، أول تابلت في العالم مدعوم من الروبوت 3.0 (Honeycomb).",
+    "priceUSD": 50,
+    "type": "Tablet",
+    "color": "اسود"
+  },
+  {
+    "age": 18,
+    "id": "t-mobile-g2",
+    "imageUrl": "http://phandroid.s3.amazonaws.com/wp-content/uploads/2010/10/T-Mobile-G2-views.jpg",
+    "name": "T-Mobile G2",
+    "snippet": "The T-Mobile G2 مع جوجل هو أول هاتف ذكي بنيت لسرعات 4G على شبكة تي موبايل الجديد. الحصول على المعلومات التي تحتاج إليها، وأسرع مما كنت فكرت ممكن.",
+    "priceUSD": 15.70,
+    "type": "Phone",
+    "color": "ذهبى"
+  },
+
+  {
+    "age": 2,
+    "carrier": "AT&T",
+    "id": "motorola-atrix-4g",
+    "imageUrl": "http://cdn.ecoustics.com/db0/wblob/17BA35E873D594/C0/9986/estJJmLT0f25CP-F3zVRSbuFJsyF8Dcswe9dxtW7W54/709776.jpg",
+    "name": "MOTOROLA ATRIX™ 4G",
+    "snippet": "MOTOROLA ATRIX 4G الهاتف الذكي الاقوى في العالم.",
+    "priceUSD": 40,
+    "type": "Phone",
+    "color": "ذهبى"
+
+  },
+  {
+    "age": 3,
+    "id": "dell-streak-7",
+    "imageUrl": "http://www.boeboer.com/wp-content/uploads/2011/03/DellStreak7UserManualQuickStartGuideSpecsOverview.jpg",
+    "name": "Dell Streak 7",
+    "snippet": "تقديم ديل ™ الإنتصارات 7. مشاركة الصور والفيديو والأفلام معا. انها صغيرة بما يكفي لتحملها، كبيرة بما يكفي لجمع حولها.",
+    "priceUSD": 60.25,
+    "type": "Tablet",
+    "color": "اسود"
+  },
+  {
+    "age": 4,
+    "carrier": "Cellular South",
+    "id": "samsung-gem",
+    "imageUrl": "http://2.bp.blogspot.com/_1aotV_O7FX0/S7cXIi-uM9I/AAAAAAAAB5U/hb9lsGj0ziw/s320/samsung-phones.gif",
+    "name": "Samsung Gem™",
+    "snippet": "سامسونج جيم ™ يجلب لك كل ما كنت تتوقع وأكثر من شاشة تعمل باللمس الهواتف الذكية - المزيد من التطبيقات، والمزيد من الميزات وأسعار أكثر بأسعار معقولة.",
+    "priceUSD": 80.35,
+    "type": "Phone",
+    "color": "ذهبى"
+  },
+
+  {
+    "age": 9,
+    "carrier": "Cellular South",
+    "id": "samsung-showcase-a-galaxy-s-phone",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71WJav5zSYL._SX522_.jpg",
+    "name": "Samsung Showcase™ a Galaxy S™ phone",
+    "snippet": "يقدم سامسونج شوكيس ™ تجربة جودة السينما وكأنك لم يسبق له مثيل من قبل. تقدم تقنية العرض التي تعمل باللمس 4 بوصة المبتكرة تألق الصورة الغنية، حتى في الهواء الطلق",
+    "priceUSD": 30.54,
+    "type": "Phone",
+    "color": "رمادى"
+  },
+
+  {
+    "age": 13,
+    "carrier": "T-Mobile",
+    "id": "motorola-defy-with-motoblur",
+    "imageUrl": "https://motorola-global-en-uk.custhelp.com/euf/assets/images/ProdImages/motocare/7695-hero.png",
+    "name": "Motorola DEFY™ with MOTOBLUR™",
+    "snippet": "هل أنت مستعد لكل الحياة يلقي طريقك؟",
+    "priceUSD": 30.54,
+    "type": "Tablet",
+    "color": "اسود"
+  },
+  {
+    "age": 14,
+    "carrier": "T-Mobile",
+    "id": "t-mobile-mytouch-4g",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/416anJOhW9L.jpg",
+    "name": "T-Mobile myTouch 4G",
+    "snippet": "و T-موبيل ميتوش 4G هو الهاتف الذكي قسط مصممة لتقديم سرعات 4G سريعة الحارقة بحيث يمكنك دردشة الفيديو من أي مكان عمليا، مع أو بدون واي فاي.",
+    "priceUSD": 30.54,
+    "type": "Phone",
+    "color": "رمادى"
+  },
+  {
+    "age": 15,
+    "carrier": "US Cellular",
+    "id": "samsung-mesmerize-a-galaxy-s-phone",
+    "imageUrl": "http://www.comparecellular.com/images/assets/11-15-2010-telus-sgsfascinate.jpg",
+    "name": "Samsung Mesmerize™ a Galaxy S™ phone",
+    "snippet": "يقدم سامسونج ميزريز ™ تجربة جودة السينما وكأنك لم يسبق له مثيل من قبل. تقدم تقنية العرض التي تعمل باللمس 4 بوصة المبتكرة تألق الصورة الغنية، حتى في الهواء الطلق",
+    "priceUSD": 30.54,
+    "type": "Phone",
+    "color": "رمادى"
+  },
+
+  {
+    "age": 14,
+    "carrier": "T-Mobile",
+    "id": "t-mobile-mytouch-4g",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/416anJOhW9L.jpg",
+    "name": "T-Mobile myTouch 4G",
+    "snippet": "و T-موبيل ميتوش 4G هو الهاتف الذكي قسط مصممة لتقديم سرعات 4G سريعة الحارقة بحيث يمكنك دردشة الفيديو من أي مكان عمليا، مع أو بدون واي فاي.",
+    "priceUSD": 30.54,
+    "type": "Phone",
+    "color": "رمادى"
+  }
+  
+   
+   
+]
