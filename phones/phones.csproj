@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -894,6 +895,7 @@
     <Content Include="views\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="views\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="views\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="views\data\phonesArabic.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -910,6 +912,10 @@
     <Content Include="views\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="views\index.html" />
     <Content Include="views\js\app.js" />
+    <Content Include="views\js\parentController.js" />
+    <Content Include="views\js\languageService.js" />
+    <Content Include="views\js\phoneGallaryCtrl.js" />
+    <Content Include="views\js\rangeFilter.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

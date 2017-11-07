@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phone Gallary</title>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript">
+    if (/lang-ar/.test(window.top.location.href)) {
+        document.write('<link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">');
+    }
+    </script>   
     <link href="../Content/font-awesome.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
     <script src="../scripts/angular.min.js"></script>
@@ -14,8 +18,31 @@
     <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/phoneGallaryCtrl.js"></script>
+    <script src="js/parentController.js"></script>
+    <script src="js/languageService.js"></script>
+    <script src="js/rangeFilter.js"></script>
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="parentController as parent">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">{{parent.languageService.getLangValue('phoneGallery')}}</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            {{parent.languageService.getLangValue('home')}}    
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://localhost:46841/views/index.html?language=lang-en">English</a></li>
+                        <li><a href="http://localhost:46841/views/index.html?language=lang-ar">العربية</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <form>
 
     <div class="container-fluid" ng-controller="phoneGallaryCtrl as vm">
@@ -23,31 +50,30 @@
             <div class="col-md-2 sidmenuPadding">
 
                 <div class="list-group border-0 card text-center text-md-left">
-                    <a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-filter"></i> <span class="d-none d-md-inline">Filter by</span> </a>
+                    <a href="#menu1" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-filter"></i> <span class="d-none d-md-inline">{{parent.languageService.getLangValue('filter')}} </span> </a>
                     <div class="collapse" id="menu1">
-                        <div   class="list-group-item form-group" >Type<br />
+                        <div   class="list-group-item form-group" >{{parent.languageService.getLangValue('type')}}<br />
+                            <div class="">
+                                <label><input type="radio" ng-model="vm.type" value="1" ng-change="vm.searchBytype(vm.type)" name="optradio">{{parent.languageService.getLangValue('Tablet')}} </label>
 
-                            <label><input type="radio" ng-model="vm.type" value="1"  ng-change="vm.searchBytype(vm.type)" name="optradio">Tablet</label>
-                        
 
-                            <label class="typeSearch"><input type="radio"ng-model="vm.type" value="2"  ng-change="vm.searchBytype(vm.type)" name="optradio">Phone</label>
+                                <label class="typeSearch"><input type="radio" ng-model="vm.type" value="2" ng-change="vm.searchBytype(vm.type)" name="optradio">{{parent.languageService.getLangValue('Phone')}} </label>
+                            </div>
                         </div>
 
-                        <div  class="list-group-item form-group" data-parent="#menu1">Price<br />
-                            <label>    Min <input type="number" ng-model="vm.minPrice" class="form-control priceInpots" /></label>
-                            <label> Max  <input type="number" ng-model="vm.maxPrice" class="form-control priceInpots"/></label>
+                        <div  class="list-group-item form-group" data-parent="#menu1">{{parent.languageService.getLangValue('Price')}} <br />
+                            <label>  {{parent.languageService.getLangValue('Min')}}    <input type="number" ng-model="vm.minPrice" class="form-control priceInpots" /></label>
+                            <label> {{parent.languageService.getLangValue('Max')}}     <input type="number" ng-model="vm.maxPrice" class="form-control priceInpots"/></label>
                             <button type="button" class="btn  btn-primary searchBtn"  ng-click="vm.searchByPrice(vm.minPrice,vm.maxPrice)">Serach</button>
                         </div>
-                        <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
-                    </div>
-
-                    <!--<a href="#menu2" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-dashboard"></i> <span class="d-none d-md-inline">Item 2</span> </a>
-                    <div class="collapse" id="menu2">
-                        
-                        <a href="#" class="list-group-item" data-parent="#menu2">Subitem 1</a>
-                        <a href="#" class="list-group-item" data-parent="#menu2"></a>
-                        <a href="#" class="list-group-item" data-parent="#menu2">Subitem 3</a>
-                    </div>-->
+                        <div class="list-group-item form-group" data-parent="#menu1">
+                           <label>{{parent.languageService.getLangValue('Color')}} </label> <br />
+                            <label>{{parent.languageService.getLangValue('Black')}} <input type="radio" ng-model="vm.color" ng-change="vm.searchBycolor(vm.color)" value="1" /></label>
+                            <label> {{parent.languageService.getLangValue('Gray')}}  <input type="radio" ng-model="vm.color" ng-change="vm.searchBycolor(vm.color)" value="2" /></label>
+                            <label> {{parent.languageService.getLangValue('Gold')}}  <input type="radio" ng-model="vm.color" ng-change="vm.searchBycolor(vm.color)" value="3" /></label>
+                            
+                         </div>
+                    </div> 
                   
                 </div>
             </div>
@@ -55,13 +81,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-header">
-                            <h1>
-                                Phone <small>Gallary</small>
-                            </h1>
-                            <label>Prices on: </label>
+                            
+                            <label>{{parent.languageService.getLangValue('prices')}}: </label>
                             <select class="selectDdl form-control" ng-model="vm.prices"  ng-change="vm.convertPrices(vm.prices)">
-                                <option value="2">USD</option>
-                                <option value="1">EGP</option>
+                                <option value="2">{{parent.languageService.getLangValue('USD')}}</option>
+                                <option value="1">{{parent.languageService.getLangValue('EGP')}}</option>
                             </select>
 
                         </div>
@@ -79,12 +103,14 @@
                                     {{phone.snippet}}
                                 </p>
                                 <p ng-show="vm.showUSD">
-                                    Price : {{phone.priceUSD | currency:"USD $"}}
+                                {{parent.languageService.getLangValue('Price')}} : {{phone.priceUSD | currency:"USD $"}}
                                 </p>
                                 <p ng-show="vm.showEGP">
-                                    Price : {{phone.priceEGP | currency:"EGP "}}
+                                    {{parent.languageService.getLangValue('Price')}} : {{phone.priceEGP | currency:"EGP "}}
                                 </p>
-
+                                <p >
+                                    {{parent.languageService.getLangValue('Color')}} : {{phone.color}}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -93,26 +119,15 @@
                 </div>
 
                 <ul class="pagination">
-                    <li>
-                        <a href="#">Prev</a>
+                    <li  ng-click="vm.prev()">
+                        <a >{{parent.languageService.getLangValue('Prev')}} </a>
                     </li>
-                    <li>
-                        <a href="#">1</a>
+                    <li ng-repeat="i in vm.numberOfPage track by $index" ng-click="vm.getDataForCurrentPage($index +1)">
+                        <a >{{$index +1}}</a>
                     </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">Next</a>
+
+                    <li  ng-click="vm.next()">
+                        <a >{{parent.languageService.getLangValue('Next')}}  </a>
                     </li>
                 </ul>
             </div>
