@@ -890,6 +890,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="views\css\bootstrap-rtl.min.css" />
     <Content Include="views\data\phones.json" />
     <Content Include="views\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="views\fonts\glyphicons-halflings-regular.ttf" />
