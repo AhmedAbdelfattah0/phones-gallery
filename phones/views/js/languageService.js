@@ -20,8 +20,13 @@
                 'arabic-eg': 'اللغة'
 
             },
-            'language': {
+            'English': {
                 'eng-us': 'English',
+                'arabic-eg': 'English'
+
+            },
+            'Arabic': {
+                'eng-us': 'العربية',
                 'arabic-eg': 'العربية'
 
             },
