@@ -19,7 +19,7 @@
 
         // to get the data from json file and bind it to the view
         $http.get(vm.phoneEnORAr).then(function (response) {
-            debugger
+             
             // map new property in every length on the phone list to convert price from USD to EGP
             for (var i = 0; i < response.data.length; i++) {
                 response.data[i]['priceEGP'] = (response.data[i].priceUSD * 17);
@@ -98,7 +98,7 @@
 
             }
 
-
+        
 
         }
         //get data of the Current Page
