@@ -3,13 +3,14 @@
 
     angular
         .module('myApp')
-    .controller("phoneGallaryCtrl", ['$http', "$filter", phoneGallaryCtrl]);
-    function phoneGallaryCtrl($http, $filter) {
+        .controller("phoneGallaryCtrl", ['$http', "$filter","languageService", phoneGallaryCtrl]);
+    function phoneGallaryCtrl($http, $filter, languageService) {
         var vm = this;
         vm.prices = "1";//initialize the price type drowpdown list
         vm.pagesize = 16;// initialize items per page
         vm.currentpage = 1;// initialize the current page
         vm.phoneEnORAr = /lang-ar/.test(window.top.location.href) ? 'data/phonesArabic.json' : 'data/phones.json';//to get arabic or english data based on url
+        vm.languageService = languageService;
 
         //to get number of pages
         function getNumberOfPages(data) {
@@ -81,19 +82,22 @@
         }
         //filter by color
         vm.searchBycolor = function (data) {
+            debugger
             if (data == "1") {
+                debugger
                 var data = angular.copy(vm.generalData);
-                vm.phonseData = $filter('filter')(data, { color: 'Black' } || { color: 'اسود' });
+
+                vm.phonseData = $filter('filter')(data, { color: vm.languageService.getLangValue('Black') });
                 vm.numberOfPage = getNumberOfPages(vm.phonseData);
 
             } else if (data == 2) {
                 var data = angular.copy(vm.generalData);
-                vm.phonseData = $filter('filter')(data, { color: 'Gray' } || { color: 'رمادى' });
+                vm.phonseData = $filter('filter')(data, { color: vm.languageService.getLangValue('Gray') });
                 vm.numberOfPage = getNumberOfPages(vm.phonseData);
 
             } else if (data == 3) {
                 var data = angular.copy(vm.generalData);
-                vm.phonseData = $filter('filter')(data, { color: 'Gold' || { color: 'ذهبى' } });
+                vm.phonseData = $filter('filter')(data, { color: vm.languageService.getLangValue('Gold')});
                 vm.numberOfPage = getNumberOfPages(vm.phonseData);
 
             }
@@ -128,7 +132,7 @@
             }
         }
         //// inisializ the price view by EGP
-        //vm.convertPrices(1)
+         vm.convertPrices(1)
 
     }
 })();
