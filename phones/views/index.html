@@ -64,7 +64,7 @@
                         <div  class="list-group-item form-group" data-parent="#menu1">{{parent.languageService.getLangValue('Price')}} <br />
                             <label>  {{parent.languageService.getLangValue('Min')}}    <input type="number" ng-model="vm.minPrice" class="form-control priceInpots" /></label>
                             <label> {{parent.languageService.getLangValue('Max')}}     <input type="number" ng-model="vm.maxPrice" class="form-control priceInpots"/></label>
-                            <button type="button" class="btn  btn-primary searchBtn"  ng-click="vm.searchByPrice(vm.minPrice,vm.maxPrice)">Serach</button>
+                            <button type="button" class="btn  btn-primary searchBtn"  ng-click="vm.searchByPrice(vm.minPrice,vm.maxPrice)">{{parent.languageService.getLangValue('Search')}}</button>
                         </div>
                         <div class="list-group-item form-group" data-parent="#menu1">
                            <label>{{parent.languageService.getLangValue('Color')}} </label> <br />

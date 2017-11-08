@@ -102,6 +102,11 @@
                 'eng-us': 'Prev',
                 'arabic-eg': 'السابق'
 
+            },
+            'Search': {
+                'eng-us': 'Search',
+                'arabic-eg': 'بحث'
+
             }
         }
 

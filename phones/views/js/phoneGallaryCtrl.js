@@ -127,8 +127,8 @@
                 vm.getDataForCurrentPage(vm.currentpage + 1);
             }
         }
-        // inisializ the price view by EGP
-        vm.convertPrices(1)
+        //// inisializ the price view by EGP
+        //vm.convertPrices(1)
 
     }
 })();
